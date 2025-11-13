@@ -1,0 +1,22 @@
+{
+  "name": "@s-cli-dev/core",
+  "version": "1.0.0",
+  "description": "core",
+  "author": "wujinshan <wujinshan@neware.com.cn>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/core.test.js"
+  },
+  "dependencies": {
+    "@s-cli-dev/utils": "^1.0.0"
+  }
+}
