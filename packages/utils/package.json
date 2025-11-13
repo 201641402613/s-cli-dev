@@ -1,6 +1,6 @@
 {
   "name": "@s-cli-dev/utils",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "utils",
   "author": "wujinshan <wujinshan@neware.com.cn>",
   "homepage": "",
@@ -10,11 +10,14 @@
     "lib": "lib",
     "test": "__tests__"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "lib"
   ],
   "scripts": {
     "test": "node ./__tests__/utils.test.js"
   },
-  "gitHead": "33ff4eb02d4e9b48eeb014302ebd744c24bc8749"
+  "gitHead": "fd987b50484abbefe8c51f17b9084ecad0e2c054"
 }
