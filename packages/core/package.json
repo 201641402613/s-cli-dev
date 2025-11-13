@@ -1,6 +1,6 @@
 {
   "name": "@s-cli-dev/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "core",
   "author": "wujinshan <wujinshan@neware.com.cn>",
   "homepage": "",
@@ -17,6 +17,6 @@
     "test": "node ./__tests__/core.test.js"
   },
   "dependencies": {
-    "@s-cli-dev/utils": "^1.0.0"
+    "@s-cli-dev/utils": "^1.0.1"
   }
 }
