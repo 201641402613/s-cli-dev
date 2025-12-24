@@ -20,6 +20,7 @@ let args, config;
 const program = new commander.Command();
 
 async function core() {
+  console.log("core start");
   checkPkgVersion();
   // checkNodeVersion()
   await checkRoot();
