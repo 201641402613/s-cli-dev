@@ -1,6 +1,6 @@
 {
   "name": "@s-cli-dev/cli",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "cli",
   "author": "wujinshan <wujinshan@neware.com.cn>",
   "homepage": "",
@@ -23,10 +23,10 @@
     "test": "node ./__tests__/core.test.js"
   },
   "dependencies": {
-    "@s-cli-dev/get-npm-info": "^1.0.8",
-    "@s-cli-dev/init": "^1.0.8",
-    "@s-cli-dev/log": "^1.0.8",
-    "@s-cli-dev/utils": "^1.0.8",
+    "@s-cli-dev/get-npm-info": "^1.0.9",
+    "@s-cli-dev/init": "^1.0.9",
+    "@s-cli-dev/log": "^1.0.9",
+    "@s-cli-dev/utils": "^1.0.9",
     "commander": "^14.0.2",
     "dotenv": "^17.2.3",
     "minimist": "^1.2.8",
