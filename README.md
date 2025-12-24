@@ -31,7 +31,7 @@
   "publishConfig": {
   "access": "public"
   },
-  另外，需要去 npmjs.com 上创建一个 Organizations，然后发布上去
+  另外，需要去 npmjs.com 上创建一个 Organizations(名称：s-cli-dev)，然后发布上去
 
   注意：发布的话没有 LICENSE.md 会报错，需要手动添加
 
