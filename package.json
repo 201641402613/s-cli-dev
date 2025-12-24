@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "add-pkg": "sh bash/create-package.sh"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,13 @@
     "lerna": "^8.2.4"
   },
   "workspaces": [
-    "packages/*"
-  ]
+    "packages/*",
+    "core/*",
+    "utils/*",
+    "commands/*"
+  ],
+  "dependencies": {
+    "import-local": "^3.2.0",
+    "npmlog": "^7.0.1"
+  }
 }

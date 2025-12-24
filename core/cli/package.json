@@ -1,7 +1,7 @@
 {
-  "name": "@s-cli-dev/core",
+  "name": "@s-cli-dev/cli",
   "version": "1.0.5",
-  "description": "core",
+  "description": "cli",
   "author": "wujinshan <wujinshan@neware.com.cn>",
   "homepage": "",
   "license": "ISC",
@@ -23,7 +23,17 @@
     "test": "node ./__tests__/core.test.js"
   },
   "dependencies": {
-    "@s-cli-dev/utils": "^1.0.5"
+    "@s-cli-dev/get-npm-info": "^1.0.5",
+    "@s-cli-dev/log": "^1.0.5",
+    "@s-cli-dev/utils": "^1.0.5",
+    "@s-cli-dev/init": "^1.0.5",
+    "commander": "^14.0.2",
+    "dotenv": "^17.2.3",
+    "minimist": "^1.2.8",
+    "npmlog": "^7.0.1",
+    "path-exists": "^5.0.0",
+    "root-check": "^2.0.0",
+    "user-home": "^2.0.0"
   },
   "gitHead": "e79bcb94bd7ba1f1a5a2067452db891e3efc550f"
 }
