@@ -78,3 +78,32 @@
   - 第二次执行 npm install npmlog -w @s-cli-dev/example 的时候，npm 会去查找@s-cli-dev/example 这个 workspace 是否存在
   - 由于前面已经安装了@s-cli-dev/example ，所以这个 workspace 已经存在了，所以不会报错，成功安装 npmlog 到@s-cli-dev/example 中
 - 所以当新增一个包时，最好先 npm install 一次（但是我觉得不应该这么麻烦，找找解决方案）
+
+## 4. 发布踩坑
+
+- 4.1 发布命令： lerna publish
+  发布之前有修改的话要先提交到 git 上
+- 4.2 遇到的 403 错误：
+
+  ```
+  lerna WARN notice Package failed to publish: @s-cli-dev/utils
+  lerna ERR! E403 Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages.
+  lerna ERR! errno "undefined" is not a valid exit code - exiting with code 1
+  lerna WARN notice Package failed to publish: @s-cli-dev/init
+  lerna ERR! E403 Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages.
+  lerna ERR! errno "undefined" is not a valid exit code - exiting with code 1
+  ```
+
+  原因： 因为 npm 发布需要开启 2fa 验证，所以需要在 npm 上开启 2fa 验证
+  解决方法：
+
+  - 4.2.1 登录 npm 官网 → Account Settings → Access Tokens → Generate New Token。
+  - 4.2.2 选择 Automation 类型的 token，这种 token 可以 bypass 2FA 验证
+  - 4.2.3 复制生成的 token，本地创建 .npmrc 文件，添加：
+    ```
+    //registry.npmjs.org/:_authToken=YOUR_TOKEN
+    ```
+  - 4.2.4 重新执行发布命令： lerna publish
+
+  注意：生成 token 的时候要勾选这个
+  ![alt text](image.png)
